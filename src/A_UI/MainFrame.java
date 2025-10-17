@@ -27,91 +27,60 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnNewUser = new javax.swing.JButton();
         btnExistingUser = new javax.swing.JButton();
+        btnNewUser = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sport Tickets Resrevation System");
+        setTitle("Sport Tickets Reservation");
         setResizable(false);
 
+        btnExistingUser.setBackground(new java.awt.Color(204, 204, 255));
+        btnExistingUser.setFont(new java.awt.Font("Bodoni MT", 1, 18)); // NOI18N
+        btnExistingUser.setForeground(new java.awt.Color(102, 0, 153));
+        btnExistingUser.setText("Existing User");
+        btnExistingUser.setBorder(null);
+
         btnNewUser.setBackground(new java.awt.Color(204, 204, 255));
-        btnNewUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnNewUser.setForeground(new java.awt.Color(102, 51, 255));
+        btnNewUser.setFont(new java.awt.Font("Bodoni MT", 1, 18)); // NOI18N
+        btnNewUser.setForeground(new java.awt.Color(102, 0, 153));
         btnNewUser.setText("New User");
-        btnNewUser.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnNewUser.setBorderPainted(false);
+        btnNewUser.setBorder(null);
         btnNewUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNewUserActionPerformed(evt);
             }
         });
 
-        btnExistingUser.setBackground(new java.awt.Color(204, 204, 255));
-        btnExistingUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnExistingUser.setForeground(new java.awt.Color(102, 51, 255));
-        btnExistingUser.setText("Existing User");
-        btnExistingUser.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        btnExistingUser.setBorderPainted(false);
-        btnExistingUser.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExistingUserActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(102, 0, 255));
-        jLabel1.setText(" Sport Tickets Reservation System");
-        jLabel1.setToolTipText("");
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(102, 0, 204));
-        jLabel2.setText("You can register as a new user or log in if you already have an account.");
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(102, 0, 204));
-        jLabel3.setText("Welcome to the Online Sports Ticket Reservation System!");
+        jLabel1.setFont(new java.awt.Font("Bell MT", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 204));
+        jLabel1.setText("Sport Tickets Reservation System");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 478, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(33, 33, 33))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(199, 199, 199)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnNewUser, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnExistingUser, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(126, Short.MAX_VALUE)
+                .addComponent(btnNewUser, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(btnExistingUser, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(132, 132, 132))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(141, 141, 141)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(14, 14, 14)
                 .addComponent(jLabel1)
-                .addGap(34, 34, 34)
-                .addComponent(jLabel3)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE)
-                .addComponent(btnNewUser, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnExistingUser, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 209, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnExistingUser, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnNewUser, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(51, 51, 51))
         );
 
         pack();
@@ -119,11 +88,12 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void btnNewUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewUserActionPerformed
         // TODO add your handling code here:
+        RegisterFrame sign = new RegisterFrame();
+    sign.setLocationRelativeTo(this);
+    sign.setVisible(true);
+    this.dispose();
+    //setVisible(false);
     }//GEN-LAST:event_btnNewUserActionPerformed
-
-    private void btnExistingUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExistingUserActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnExistingUserActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,7 +134,5 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnExistingUser;
     private javax.swing.JButton btnNewUser;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }
